@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abderazak Lakel | Architecte & Chef de Projet</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                            600: '#475569',
+                            accent: '#f59e0b', // Construction Amber
+                            accentHover: '#d97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-industrial-900 text-slate-100 antialiased selection:bg-industrial-accent selection:text-industrial-900">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-industrial-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded bg-industrial-accent flex items-center justify-center text-industrial-900 font-bold text-xl shadow-lg shadow-industrial-accent/20">
+                    AL
+                </div>
+                <div>
+                    <span class="block font-heading text-lg tracking-wider uppercase font-bold text-white">Abderazak Lakel</span>
+                    <span class="block text-xs text-industrial-accent font-medium tracking-widest uppercase">Architecte & Chef de Projet</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-industrial-accent transition-colors">À Propos</a>
+                <a href="#experience" class="hover:text-industrial-accent transition-colors">CV & Expérience</a>
+                <a href="#gallery" class="hover:text-industrial-accent transition-colors">Chانيت / Terrain</a>
+                <a href="#videos" class="hover:text-industrial-accent transition-colors">Vidéos</a>
+                <a href="#contact" class="bg-industrial-accent hover:bg-industrial-accentHover text-industrial-900 px-5 py-2.5 rounded font-bold transition-all shadow-md shadow-industrial-accent/10">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-industrial-800 border-b border-slate-700 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-industrial-accent">À Propos</a>
+            <a href="#experience" class="block py-2 text-slate-300 hover:text-industrial-accent">CV & Expérience</a>
+            <a href="#gallery" class="block py-2 text-slate-300 hover:text-industrial-accent">Chantier / Terrain</a>
+            <a href="#videos" class="block py-2 text-slate-300 hover:text-industrial-accent">Vidéos</a>
+            <a href="#contact" class="block py-2 text-industrial-accent font-bold">Contact</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-industrial-900 to-industrial-800 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-industrial-800 border border-slate-700 px-3 py-1.5 rounded-full text-xs text-industrial-accent font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        <span>Alger & Blida, Algérie</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white uppercase leading-none">
+                        Maîtrise d'Œuvre & <span class="text-industrial-accent">Direction de Chantier</span>
+                    </h1>
+                    <p class="text-slate-300 text-lg leading-relaxed max-w-2xl">
+                        Architecte et Chef de Projet rigoureux, cumulant une solide double expertise technique sur le terrain (EURL Babel Construction) et pédagogique à l'Université d'Alger 1. Spécialisé dans la direction globale de projets de construction, le suivi des chantiers d'équipements publics et l'administration des marchés publics.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact" class="bg-industrial-accent hover:bg-industrial-accentHover text-industrial-900 font-bold px-8 py-3.5 rounded transition-all flex items-center space-x-2 shadow-lg shadow-industrial-accent/20">
+                            <span>Discuter d'un Projet</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#experience" class="bg-industrial-800 hover:bg-industrial-700 text-white font-semibold px-8 py-3.5 rounded border border-slate-700 transition-all">
+                            Voir le CV Interactif
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Photo Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-sm">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-industrial-accent to-amber-600 rounded-xl blur opacity-30"></div>
+                        <div class="relative bg-industrial-800 border border-slate-700 p-3 rounded-xl shadow-2xl">
+                            <!-- Replace assets/images/profile.jpg with your portrait image -->
+                            <img src="assets/images/profile.jpg" alt="Abderazak Lakel" class="rounded-lg w-full h-[420px] object-cover object-top filter grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
+                            <div class="absolute bottom-6 left-6 right-6 bg-industrial-900/90 backdrop-blur border border-slate-700 p-4 rounded-lg">
+                                <h3 class="font-bold text-white text-lg">Abderazak Lakel</h3>
+                                <p class="text-xs text-industrial-accent font-medium">Architecte & Chef de Projet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CV / RESUME SECTION -->
+    <section id="experience" class="py-20 bg-industrial-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Parcours & Compétences</span>
+                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">CV Interactif</h2>
+                <div class="w-16 h-1 bg-industrial-accent mx-auto"></div>
+                <p class="text-slate-400">Explorez mon expérience professionnelle, mes qualifications académiques et mes compétences techniques en gestion de construction.</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex bg-industrial-800 p-1.5 rounded-lg border border-slate-700 space-x-2">
+                    <button onclick="switchTab('exp')" id="btn-exp" class="cv-tab-btn px-6 py-2.5 rounded-md font-semibold text-sm transition-all bg-industrial-accent text-industrial-900 shadow">Expérience</button>
+                    <button onclick="switchTab('edu')" id="btn-edu" class="cv-tab-btn px-6 py-2.5 rounded-md font-semibold text-sm transition-all text-slate-300 hover:text-white">Formation & Diplômes</button>
+                    <button onclick="switchTab('skills')" id="btn-skills" class="cv-tab-btn px-6 py-2.5 rounded-md font-semibold text-sm transition-all text-slate-300 hover:text-white">Compétences & Outils</button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Experience -->
+            <div id="content-exp" class="cv-content space-y-8 max-w-4xl mx-auto">
+                <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6 md:p-8 relative pl-8 md:pl-10 border-l-4 border-l-industrial-accent">
+                    <span class="text-xs text-industrial-accent font-bold tracking-wider uppercase">14/06/2025 - Présent</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">Architecte Chef de Projet</h3>
+                    <p class="text-slate-400 text-sm font-medium mb-4">EURL BABEL CONSTRUCTION | Wilaya de Blida & Alger</p>
+                    <p class="text-slate-300 text-sm mb-4">Direction globale de projets, suivi des chantiers d'équipements publics, métrés, attachements et gestion administrative des marchés publics.</p>
+                    <div class="space-y-2">
+                        <h4 class="text-xs uppercase font-bold tracking-wider text-industrial-accent">Projets Majeurs Suivis et Réalisés :</h4>
+                        <ul class="list-disc list-inside text-sm text-slate-300 space-y-1">
+                            <li>Centre Psychopédagogique pour les Handicapés Mentaux à Bougara (DAS Blida)</li>
+                            <li>Cantine au profit du CFPA de Bougara, Wilaya de Blida (DFEP Blida)</li>
+                            <li>Extension et Aménagement d'un Hangar en Salle d'Archive (APC Larbaâ)</li>
+                            <li>Réalisation de Deux Abris pour Groupe Électrogène (DSP Blida)</li>
+                            <li>Stade en Gazon Synthétique (École Othman Laid) & Aire de Jeux (POS 03)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6 md:p-8 relative pl-8 md:pl-10 border-l-4 border-l-slate-600">
+                    <span class="text-xs text-slate-400 font-bold tracking-wider uppercase">09/2024 - Présent</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">Professeur Assistant - Module Atelier</h3>
+                    <p class="text-slate-400 text-sm font-medium mb-4">Université d'Alger 1 | Département d'Architecture</p>
+                    <p class="text-slate-300 text-sm">Encadrement des étudiants en atelier de conception, transmission des méthodologies du projet architectural, suivi critique et articulation entre théories et réalités du chantier.</p>
+                </div>
+
+                <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6 md:p-8 relative pl-8 md:pl-10 border-l-4 border-l-slate-600">
+                    <span class="text-xs text-slate-400 font-bold tracking-wider uppercase">Expériences en Bureaux d'Études (BET)</span>
+                    <h3 class="text-xl font-bold text-white mt-1">BET ARTEK (Dely Brahim), BET Machou Hamid, BET Mhenni Amine</h3>
+                    <p class="text-slate-400 text-sm font-medium mb-4">2023 - 2025</p>
+                    <p class="text-slate-300 text-sm">Conception architecturale, modélisation 3D avancée (Lumina, V-Ray, AutoCAD), élaboration des dossiers d'exécution (EXE) et production graphique.</p>
+                </div>
+            </div>
+
+            <!-- Tab Content: Education & Certifications -->
+            <div id="content-edu" class="cv-content hidden space-y-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6">
+                        <div class="text-industrial-accent text-2xl mb-3"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="text-xs text-industrial-accent font-bold tracking-wider uppercase">09/2019 - 06/2024</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Diplôme d'Architecte</h3>
+                        <p class="text-slate-400 text-sm mb-3">Option: Architecture Urbaine et Métiers de la Ville</p>
+                        <p class="text-slate-300 text-sm">Université d'Alger 1</p>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6 space-y-4">
+                        <div class="text-industrial-accent text-2xl"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 class="text-xl font-bold text-white">Formations Continues</h3>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <span class="font-bold text-white block">Formation Entrepreneuriat (CDE) - Avril 2026</span>
+                                <span class="text-slate-400 text-xs">Business Plans, gestion financière & création d'entreprise.</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-white block">Formation Marchés Publics - Septembre 2025</span>
+                                <span class="text-slate-400 text-xs">Montage de dossiers de soumission, cahiers des charges (CCAP/CCTP).</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-white block">Formation Suivi de Chantier - Août 2025</span>
+                                <span class="text-slate-400 text-xs">Contrôle qualité, respect des délais, coordination CES/CET & HSE.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Skills -->
+            <div id="content-skills" class="cv-content hidden space-y-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6">
+                        <h3 class="text-lg font-bold text-white mb-4 flex items-center space-x-2">
+                            <i class="fa-solid fa-helmet-safety text-industrial-accent"></i>
+                            <span>Management & Terrain</span>
+                        </h3>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Direction de chantier</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Chiffrage & métré (BPU)</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Attachements & situations</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Suivi des marchés publics</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6">
+                        <h3 class="text-lg font-bold text-white mb-4 flex items-center space-x-2">
+                            <i class="fa-solid fa-laptop-code text-industrial-accent"></i>
+                            <span>Logiciels DAO / Rendu</span>
+                        </h3>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>AutoCAD, Revit, Archicad</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Lumion, V-Ray</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Adobe Photoshop</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>DepthMapX</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-slate-700 rounded-xl p-6">
+                        <h3 class="text-lg font-bold text-white mb-4 flex items-center space-x-2">
+                            <i class="fa-solid fa-calculator text-industrial-accent"></i>
+                            <span>Bureautique & Calcul</span>
+                        </h3>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>MS Excel Avancé (macros)</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>MS Project (Planning)</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Français (Courant / Pro)</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-industrial-accent text-xs"></i><span>Anglais Intermédiaire</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIELD EXPERIENCE GALLERY SECTION -->
+    <section id="gallery" class="py-20 bg-industrial-800 border-t border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Réalisations sur le Terrain</span>
+                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Galerie des Chantiers</h2>
+                <div class="w-16 h-1 bg-industrial-accent mx-auto"></div>
+                <p class="text-slate-300">Aperçu visuel des chantiers d'équipements publics, structures et infrastructures supervisés sur le terrain (Bougara, Blida, Alger).</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="group relative bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+                    <!-- Replace with your actual site image in assets/images/ -->
+                    <div class="h-64 overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <img src="assets/images/site-bougara.jpg" alt="Centre Psychopédagogique Bougara" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-slate-500\'><i class=\'fa-solid fa-image text-4xl mb-2 text-industrial-accent\'></i><p class=\'text-xs\'>Ajouter site-bougara.jpg dans assets/images/</p></div>'">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Bougara, Blida</span>
+                        <h3 class="text-xl font-bold text-white">Centre Psychopédagogique</h3>
+                        <p class="text-slate-400 text-sm">Supervision globale, conformité des travaux d'exécution et suivi rigoureux du corps d'état.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="group relative bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+                    <div class="h-64 overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <img src="assets/images/site-cfpa.jpg" alt="Cantine CFPA Bougara" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-slate-500\'><i class=\'fa-solid fa-image text-4xl mb-2 text-industrial-accent\'></i><p class=\'text-xs\'>Ajouter site-cfpa.jpg dans assets/images/</p></div>'">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">DFEP Blida</span>
+                        <h3 class="text-xl font-bold text-white">Réalisation de Cantine - CFPA</h3>
+                        <p class="text-slate-400 text-sm">Gestion des situations de travaux, attachements et contrôle de la qualité d'exécution.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="group relative bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+                    <div class="h-64 overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <img src="assets/images/site-stade.jpg" alt="Infrastructures & Stades" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-slate-500\'><i class=\'fa-solid fa-image text-4xl mb-2 text-industrial-accent\'></i><p class=\'text-xs\'>Ajouter site-stade.jpg dans assets/images/</p></div>'">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Larbaâ & Blida</span>
+                        <h3 class="text-xl font-bold text-white">Stades & Aires de Jeux</h3>
+                        <p class="text-slate-400 text-sm">Réalisation de terrains en gazon synthétique et infrastructures sportives scolaires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO SHOWCASE SECTION -->
+    <section id="videos" class="py-20 bg-industrial-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Immersion Technique</span>
+                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Vidéos de Suivi & Projets</h2>
+                <div class="w-16 h-1 bg-industrial-accent mx-auto"></div>
+                <p class="text-slate-400">Visionnez les walkthroughs de chantiers, revues de progression et présentations de modélisations architecturales 3D.</p>
+            </div>
+
+            <!-- Video Player Container -->
+            <div class="max-w-4xl mx-auto bg-industrial-800 border border-slate-700 rounded-xl overflow-hidden shadow-2xl">
+                <div class="relative aspect-video bg-slate-950 flex items-center justify-center">
+                    <!-- Replace assets/videos/site-walkthrough.mp4 with your video file -->
+                    <video controls class="w-full h-full object-cover" poster="assets/images/site-bougara.jpg">
+                        <source src="assets/videos/site-walkthrough.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                    </video>
+                </div>
+                <div class="p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Visite & Suivi de Chantier</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Revue Technique des Travaux en Cours</h3>
+                        <p class="text-slate-400 text-sm mt-1">Démonstration de la coordination des corps d'état et du respect des normes d'exécution sur le terrain.</p>
+                    </div>
+                    <div class="bg-industrial-900 px-4 py-2 rounded border border-slate-700 text-xs text-slate-300 font-mono">
+                        Format: MP4 / HD
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-industrial-800 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Restons en Contact</span>
+                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Contact Professionnel</h2>
+                <div class="w-16 h-1 bg-industrial-accent mx-auto"></div>
+                <p class="text-slate-300">Ouvert aux opportunités de direction de projets, consultations en architecture, et partenariats dans le secteur de la construction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Info Cards -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-industrial-900 border border-slate-700 p-6 rounded-xl flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase font-semibold">Téléphone</span>
+                            <p class="text-white font-bold text-lg">+213 562 15 77 31 / +213 663 34 73 72</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-industrial-900 border border-slate-700 p-6 rounded-xl flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase font-semibold">E-mail Professionnel</span>
+                            <p class="text-white font-bold text-lg">lakelmerzak@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-industrial-900 border border-slate-700 p-6 rounded-xl flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase font-semibold">Localisation</span>
+                            <p class="text-white font-bold text-lg">Alger / Blida, Algérie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 bg-industrial-900 border border-slate-700 p-8 rounded-xl shadow-2xl">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-slate-300 mb-2">Votre Nom</label>
+                                <input type="text" required class="w-full bg-industrial-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-industrial-accent transition-colors" placeholder="Ex. Ahmed Benali">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-slate-300 mb-2">Votre E-mail</label>
+                                <input type="email" required class="w-full bg-industrial-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-industrial-accent transition-colors" placeholder="nom@exemple.dz">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-300 mb-2">Sujet</label>
+                            <input type="text" required class="w-full bg-industrial-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-industrial-accent transition-colors" placeholder="Direction de projet / Consultation...">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required class="w-full bg-industrial-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-industrial-accent transition-colors" placeholder="Détails de votre demande..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-industrial-accent hover:bg-industrial-accentHover text-industrial-900 font-bold py-4 rounded-lg transition-all shadow-lg shadow-industrial-accent/20 flex items-center justify-center space-x-2">
+                            <span>Envoyer le Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div id="form-success" class="hidden text-center text-emerald-400 font-semibold text-sm">
+                            <i class="fa-solid fa-circle-check mr-2"></i> Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-industrial-900 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded bg-industrial-accent flex items-center justify-center text-industrial-900 font-bold text-sm">
+                    AL
+                </div>
+                <span class="font-heading tracking-wider uppercase font-bold text-white">Abderazak Lakel</span>
+            </div>
+            <p class="text-xs text-slate-500 text-center">
+                &copy; 2026 Abderazak Lakel. Tous droits réservés. Conçu pour l'excellence en architecture et gestion de chantier.
+            </p>
+            <div class="flex space-x-4 text-slate-400">
+                <a href="mailto:lakelmerzak@gmail.com" class="hover:text-industrial-accent transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+                <a href="tel:+213562157731" class="hover:text-industrial-accent transition-colors"><i class="fa-solid fa-phone text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
