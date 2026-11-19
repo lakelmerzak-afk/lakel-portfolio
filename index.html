@@ -52,7 +52,7 @@
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
                 <a href="#about" class="hover:text-industrial-accent transition-colors">À Propos</a>
                 <a href="#experience" class="hover:text-industrial-accent transition-colors">CV & Expérience</a>
-                <a href="#gallery" class="hover:text-industrial-accent transition-colors">Chانيت / Terrain</a>
+                <a href="#gallery" class="hover:text-industrial-accent transition-colors">Chantier/ Terrain</a>
                 <a href="#videos" class="hover:text-industrial-accent transition-colors">Vidéos</a>
                 <a href="#contact" class="bg-industrial-accent hover:bg-industrial-accentHover text-industrial-900 px-5 py-2.5 rounded font-bold transition-all shadow-md shadow-industrial-accent/10">Contact</a>
             </nav>
@@ -248,67 +248,87 @@
         </div>
     </section>
 
-    <!-- FIELD EXPERIENCE GALLERY SECTION -->
+   <!-- FIELD EXPERIENCE & BET GALLERY SECTION -->
     <section id="gallery" class="py-20 bg-industrial-800 border-t border-b border-slate-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Réalisations sur le Terrain</span>
-                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Galerie des Chantiers</h2>
+                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Réalisations & Études</span>
+                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Galerie des Chantiers & Albums BET</h2>
                 <div class="w-16 h-1 bg-industrial-accent mx-auto"></div>
-                <p class="text-slate-300">Aperçu visuel des chantiers d'équipements publics, structures et infrastructures supervisés sur le terrain (Bougara, Blida, Alger).</p>
+                <p class="text-slate-300">Accédez directement aux albums Google Drive complets de nos chantiers sur le terrain et de nos projets de conception en bureaux d'études.</p>
             </div>
 
-            <!-- Gallery Grid -->
+            <!-- Gallery / Albums Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Gallery Item 1 -->
-                <div class="group relative bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
-                    <!-- Replace with your actual site image in assets/images/ -->
-                    <div class="h-64 overflow-hidden bg-slate-800 flex items-center justify-center">
-                        <img src="assets/images/site-bougara.jpg" alt="Centre Psychopédagogique Bougara" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-slate-500\'><i class=\'fa-solid fa-image text-4xl mb-2 text-industrial-accent\'></i><p class=\'text-xs\'>Ajouter site-bougara.jpg dans assets/images/</p></div>'">
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Bougara, Blida</span>
+                
+                <!-- 1. Chantier: Centre Psychopédagogique Bougara -->
+                <div class="bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Chantier • Bougara, Blida</span>
                         <h3 class="text-xl font-bold text-white">Centre Psychopédagogique</h3>
-                        <p class="text-slate-400 text-sm">Supervision globale, conformité des travaux d'exécution et suivi rigoureux du corps d'état.</p>
+                        <p class="text-slate-400 text-sm">Album complet contenant les photos du suivi technique, gros œuvre et finitions.</p>
                     </div>
+                    <a href=https://drive.google.com/drive/folders/11tn_1xTr4whlSSPbyk2rXuEfTZmDiUI1?usp=drive_link target="_blank" class="w-full bg-industrial-800 hover:bg-industrial-accent hover:text-industrial-900 text-white font-bold py-3 px-4 rounded-lg border border-slate-700 transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>Voir l'Album Google Drive</span>
+                        <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
                 </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="group relative bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
-                    <div class="h-64 overflow-hidden bg-slate-800 flex items-center justify-center">
-                        <img src="assets/images/site-cfpa.jpg" alt="Cantine CFPA Bougara" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-slate-500\'><i class=\'fa-solid fa-image text-4xl mb-2 text-industrial-accent\'></i><p class=\'text-xs\'>Ajouter site-cfpa.jpg dans assets/images/</p></div>'">
+                <!-- 2. Chantier: Cantine CFPA Bougara -->
+                <div class="bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Chantier • DFEP Blida</span>
+                        <h3 class="text-xl font-bold text-white">Cantine CFPA Bougara</h3>
+                        <p class="text-slate-400 text-sm">Photos des phases de réalisation, attachements et avancement des travaux.</p>
                     </div>
-                    <div class="p-6 space-y-2">
-                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">DFEP Blida</span>
-                        <h3 class="text-xl font-bold text-white">Réalisation de Cantine - CFPA</h3>
-                        <p class="text-slate-400 text-sm">Gestion des situations de travaux, attachements et contrôle de la qualité d'exécution.</p>
-                    </div>
+                    <a href=https://drive.google.com/drive/folders/1ylyTXTYd2wDpVIiy8AcWH34KPU2TXVoK?usp=drive_linktarget="_blank" class="w-full bg-industrial-800 hover:bg-industrial-accent hover:text-industrial-900 text-white font-bold py-3 px-4 rounded-lg border border-slate-700 transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>Voir l'Album Google Drive</span>
+                        <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
                 </div>
 
-                <!-- Gallery Item 3 -->
-                <div class="group relative bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
-                    <div class="h-64 overflow-hidden bg-slate-800 flex items-center justify-center">
-                        <img src="assets/images/site-stade.jpg" alt="Infrastructures & Stades" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" onerror="this.parentElement.innerHTML='<div class=\'text-center p-6 text-slate-500\'><i class=\'fa-solid fa-image text-4xl mb-2 text-industrial-accent\'></i><p class=\'text-xs\'>Ajouter site-stade.jpg dans assets/images/</p></div>'">
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Larbaâ & Blida</span>
+                <!-- 3. Chantier: Stades & Aires de Jeux -->
+                <div class="bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Chantier • Larbaâ & Blida</span>
                         <h3 class="text-xl font-bold text-white">Stades & Aires de Jeux</h3>
-                        <p class="text-slate-400 text-sm">Réalisation de terrains en gazon synthétique et infrastructures sportives scolaires.</p>
+                        <p class="text-slate-400 text-sm">Album des terrains en gazon synthétique et infrastructures scolaires sportives.</p>
                     </div>
+                    <a href=https://drive.google.com/drive/folders/1qjteQEVDortE6a6P1bHnAV_tOBA58q-k?usp=drive_link target="_blank" class="w-full bg-industrial-800 hover:bg-industrial-accent hover:text-industrial-900 text-white font-bold py-3 px-4 rounded-lg border border-slate-700 transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>Voir l'Album Google Drive</span>
+                        <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
                 </div>
+
+                <!-- 4. BET: Projets de Conception & Dossiers EXE (الخانة الجديدة الخاصة بمكتب الدراسات) -->
+                <div class="bg-industrial-900 rounded-xl overflow-hidden border border-slate-700 shadow-xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-lg bg-industrial-accent/10 border border-industrial-accent/20 flex items-center justify-center text-industrial-accent text-xl">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <span class="text-xs text-industrial-accent font-bold uppercase tracking-widest">Bureau d'Études • BET ARTEK & Autres</span>
+                        <h3 class="text-xl font-bold text-white">Études & Modélisation 3D</h3>
+                        <p class="text-slate-400 text-sm">Album des dossiers d'exécution (EXE), rendus 3D (Lumion/V-Ray) et conceptions architecturales.</p>
+                    </div>
+                    <!-- ضع رابط جوجل درايف الخاص بألبوم مكاتب الدراسات مكان علامات التنصيص أدناه -->
+                    <a href="https://drive.google.com/drive/folders/رابط_ألبوم_مكتب_الدراسات_هنا" target="_blank" class="w-full bg-industrial-800 hover:bg-industrial-accent hover:text-industrial-900 text-white font-bold py-3 px-4 rounded-lg border border-slate-700 transition-all flex items-center justify-center space-x-2 text-sm">
+                        <span>Voir l'Album Google Drive</span>
+                        <i class="fa-solid fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
-
-    <!-- VIDEO SHOWCASE SECTION -->
-    <section id="videos" class="py-20 bg-industrial-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-industrial-accent text-xs font-bold tracking-widest uppercase">Immersion Technique</span>
-                <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-white">Vidéos de Suivi & Projets</h2>
-                <div class="w-16 h-1 bg-industrial-accent mx-auto"></div>
-                <p class="text-slate-400">Visionnez les walkthroughs de chantiers, revues de progression et présentations de modélisations architecturales 3D.</p>
-            </div>
 
             <!-- Video Player Container -->
             <div class="max-w-4xl mx-auto bg-industrial-800 border border-slate-700 rounded-xl overflow-hidden shadow-2xl">
